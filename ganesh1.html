@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    <div class="content-container">
+        <header> 
+            <div class="left-rectangle"></div>
+            <h1 style="color: red;">Book Appointment with Doctor</h1>
+        </header>
+        <div class="user-info-container">
+            <h2>Consultation Details</h2>
+            <p class="user-info-text">Consultation Fees: <span style="color: blue;">Rs 2000</span></p>
+            <div class="date-picker">
+                <label for="appointment-date">Date of Appointment:</label>
+                <div class="date-input-container">
+                    <input type="date" id="appointment-date" name="appointment-date">
+                </div>
+            </div>
+            
+            <div class="timings-container">
+                <h2>Available timings:</h2>
+                <div class="time-slots">
+                    <div class="time-slot" data-time="9 AM - 10 AM">9 AM - 10 AM</div>
+                    <div class="time-slot" data-time="10 AM - 11 AM">10 AM - 11 AM</div>
+                    <div class="time-slot" data-time="11 AM - 12 PM">11 AM - 12 PM</div>
+                    <div class="time-slot" data-time="12 PM - 1 PM">12 PM - 1 PM</div>
+                    <div class="time-slot" data-time="3 PM - 4 PM">3 PM - 4 PM</div>
+                    <div class="time-slot" data-time="4 PM - 5 PM">4 PM - 5 PM</div>
+                </div>
+            </div>
+			<div class="payment-method">
+			<h2>Payment Method:</h2>
+			<select class="selected-method">
+			<option value="online">Online</option>
+			<option value="walkin">Walk-in</option>
+			</select>
+			<div class="method-options">
+			</div>
+			<div class="payment-details">
+			</div>
+			<div class="submit-button">
+			<button type="submit"><a href="payment.html">Submit</button></a>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+    <script src="2.js"></script>
+</body>
+</html>

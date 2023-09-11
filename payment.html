@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .payment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .back-arrow {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .amount-payable {
+            padding: 20px;
+        }
+
+        .payment-options {
+            padding: 20px;
+        }
+
+        .payment-options h2 {
+            font-size: 20px;
+        }
+
+        .payment-option {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-option h3 {
+            margin-right: 10px;
+        }
+
+        .payment-option select {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .view-details {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .pay-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-header">
+        <div class="back-arrow">&#9666; Back</div>
+        <h1>Payment</h1>
+    </div>
+
+    <div class="amount-payable">
+        <h2>Amount Payable</h2>
+        <p id="amount">2000</p>
+    </div>
+
+    <div class="payment-options">
+        <h2>Select Payment Options</h2>
+
+        <div class="payment-option">
+            <h3>UPI</h3>
+            <select id="upiOptions">
+                <option value="PhonePe">PhonePe</option>
+                <option value="Google Pay">Google Pay</option>
+                <option value="Amazon Pay">Amazon Pay</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="payment-option">
+            <h3>Credit Card</h3>
+            <select id="creditCardOptions">
+                <option value="SBI">SBI</option>
+                <option value="Indian Bank">Indian Bank</option>
+                <option value="ICICI Bank">ICICI Bank</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="payment-option">
+            <h3>Debit Card</h3>
+            <select id="debitCardOptions">
+                <option value="SBI">SBI</option>
+                <option value="Indian Bank">Indian Bank</option>
+                <option value="ICICI">ICICI</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="view-details">
+        <button class="pay-button">View Details and Pay</button>
+    </div>
+</body>
+</html>
